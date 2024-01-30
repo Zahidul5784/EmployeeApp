@@ -1,0 +1,18 @@
+<p>add-employee works!</p>
+
+
+<form [formGroup]="employeeForm" (ngSubmit)="SubmitForm()">
+    <p>
+        <label for="emp-Name">Name:</label>
+        <input id="emp-Name" name="empName" class="form-control" formControlName="empName" />
+    </p>
+    <p>
+        <label for="emp-address">Address:</label>
+        <input id="emp-address" name="address" class="form-control" formControlName="address" />
+    </p>
+
+    <hr />
+    <button type="submit">Save</button>
+
+
+</form>
